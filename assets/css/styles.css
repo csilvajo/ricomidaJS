@@ -1,0 +1,226 @@
+/** PROPIEDADES PERSONALIZADAS **/
+:root {
+    /*paleta de colores*/
+    --gray: #373a3c;
+    --ligth-gray: #dddddd;
+    --white: #fff;
+    --black: #000;
+    --danger: #dc3545;
+}
+
+/*ESTILOS GLOBALES*/
+html {
+    box-sizing: border-box;/*la propiedad CSS box-sizing, nos permite incluir el relleno y el borde en el ancho y alto total de un elemento*/
+    font-size: 62.5%;/*1rem es igual 10px*/    
+}
+
+body {    
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;    
+    font-size: 1.6rem !important;
+}
+
+.titulo {    
+    font-weight: 700;
+    font-size: 2.5rem !important;    
+    text-transform: uppercase;
+}
+
+/*ESTILOS BARRA NAVEGACION*/
+.titulo-logo {
+    /*se aplica tambien para el logo de pie de pagina*/
+    font-family: 'Lobster', cursive; 
+    font-weight: 400;
+    font-size: 3.7rem;
+    color: var(--white);    
+}
+
+/*ESTILOS ENCABEZADO*/
+.encabezado {
+    width: 24.6rem;
+    margin: 0 3rem !important;
+}
+
+.encabezado img {
+    width: 100%;
+    border-radius: .5rem;
+    box-shadow: .4rem .4rem .5rem var(--gray);
+}
+
+.encabezado h1 {
+    margin-top: 1.36rem;
+}
+
+.encabezado p {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.encabezado .btn {
+    height: 4rem;
+    width: 11rem;
+    border-color: var(--ligth-gray);
+    padding: 1.1rem .5rem;
+    background-color: var(--white);
+    font-size: 1.2rem !important;
+    color: var(--gray);    
+}
+
+/*ESTILOS PARA EL CARRUSEL*/
+.carrusel {
+    width: 100%;
+    margin: 0 3rem !important;    
+}
+
+.carousel img {
+    height: 20rem;
+    width: 23rem;
+}
+
+/*ESTILOS SECCION INGREDIENTES Y PREPARACION*/
+.ingredientes-preparacion {
+    width: 24.6rem;
+    margin: 0 3.7rem !important;
+    color: var(--gray);
+}
+
+.ingredientes-preparacion h2 {
+    text-transform: uppercase;
+}
+
+.columna-ingredientes ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*ESTILOS SECCION RECETAS RELACIONADAS*/
+.recetas-relacionadas {
+    width: 24.6rem;
+    margin: 0 3.7rem !important;
+    color: var(--gray);
+}
+
+.card {
+    margin-bottom: 2rem !important;    
+    box-shadow: .2rem .2rem .4rem var(--ligth-gray);
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 1.7rem !important;
+    text-transform: uppercase;
+    margin: 2rem 0 !important;
+}
+
+.card-text {
+    margin-bottom: 2rem !important;
+}
+
+/*ESTILOS SECCION SUSCRIBETE*/
+.suscribete {
+    background-color: var(--danger);
+}
+
+.suscribete .suscribete-contenido {
+    width: 24.6rem;
+    margin: 0 3.7rem;
+    padding-bottom: 9.5rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.suscribete-contenido h3 {
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.suscribete-contenido p {    
+    font-size: 2rem;
+}
+
+.suscribete-contenido span {
+    font-family: 'Lobster', cursive; 
+    font-weight: 400;
+}
+
+.suscribete-contenido .btn {
+    font-size: 1.6rem;
+}
+
+/*ESTILOS PIE DE PAGINA*/
+.pie-pagina {
+    background-color: var(--black);       
+    text-align: center;    
+}
+
+.pie-pagina p {
+    margin: 3.5rem 0;
+}
+
+/*APLICA MEDIA QUERIES EN LOS 576 PX*/
+@media (min-width: 576px) {
+    .titulo {
+        font-size: 4rem !important;
+    }
+
+    /*APLICA CAMBIOS EN EL ENCABEZADO*/
+    .encabezado {
+        width: 100%;
+        margin-top: 2.4rem !important;
+    }
+
+    .encabezado .titulo-encabezado {
+        font-size: 2rem !important;/*OJO*/
+        text-align: left !important;
+    }
+
+    .encabezado .row {
+        align-items: center; 
+    }
+
+    .encabezado .titulo-encabezado h1 {        
+        width: 42.5rem !important;
+    }  
+
+    /*APLICA CAMBIOS EN LA SECCION INGREDIENTES Y PREPARACION*/
+    .ingredientes-preparacion {
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    /*APLICA CAMBIOS EN LA SECCION RECETAS RELACIONADAS*/
+    .recetas-relacionadas {
+        width: 100%;
+    }
+
+    .card-title {       
+        font-size: 2.3rem !important;        
+    }
+
+    /*APLICA CAMBIOS EN LA SECCION SUSCRIBETE*/
+    .suscribete {
+        margin-top: 10rem;
+    }
+
+    .suscribete .suscribete-contenido {
+        width: 100%;
+        margin: 0;
+        padding-top: 15rem;
+        padding-bottom: 19.7rem;       
+    }
+
+    .suscribete-contenido h3 {
+        font-size: 4rem;        
+    }
+
+    .suscribete-contenido p {    
+        font-size: 3rem;
+    }
+
+    .suscribete-contenido .btn {
+        width: 23.3rem;
+        height: 4.5rem;
+    }
+}
